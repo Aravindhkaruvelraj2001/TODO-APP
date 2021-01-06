@@ -19,23 +19,37 @@ body
 	width: 400px;
 	height: 50px;
 	font-size: 1.5rem;
+	border-radius: 10px;
+	outline: none;
+}
+
+#inputText:hover
+{
+	border-color: pink;
 }
 
 #inputBtn
 {
 	width: 70px;
-	height: 55px;
+	height: 55;
 	font-size: 1.5rem;
+	outline: none;
 	cursor: pointer;
-	background-color:#fff982;
+	background-color:#35ffda;
+	border-radius: 15px;
 }
 
-.task-view
+#inputBtn:hover
+{
+	border-color: pink;
+}
+
+
+.task-views
 {
 	display: flex;
 	justify-content: space-between;
 	margin-top: 50px;
-	width: 400px;
 	height: 50px;
 	background-color: white;
 }
@@ -46,6 +60,7 @@ body
 	list-style: none;
 	font-size: 20px;
 	margin-top: 10px;
+	padding-right: 10px;
 
 }
 
@@ -59,15 +74,26 @@ body
 {
 	transform: translateY(8rem) rotateZ(20deg);
 	opacity: 0.1;
-	transition-duration: 2s;
+	transition-duration: 1s;
 	transition-timing-function: ease-in;
 }
 
 .finish-button,.delete-button
 {
-	color: #fcf562;
+	border-radius: 10px;
+	outline: none;
+	color: #35ffda;
 	font-size: 40px;
 	cursor: pointer;
+}
+
+.delete-button:hover
+{
+	border-color: pink;
+}
+.finish-button:hover
+{
+	border-color: pink;
 }
 
 
@@ -84,10 +110,6 @@ body
 		width: 50px;
 		height: 35px;
 		font-size: 1rem;
-	}
-	.task-view
-	{
-		width: 200px;
 	}
 
 }
